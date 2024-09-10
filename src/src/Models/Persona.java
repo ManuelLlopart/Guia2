@@ -7,6 +7,26 @@ public class Persona {
     private String email;
     private String direccion;
 
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Persona(String dni, String apellido, String nombre, String direccion, String email) {
+        this.dni = dni;
+        this.apellido = apellido;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.email = email;
+    }
+
+    public Persona(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public Persona() {
+    }
+
     public String getDni() {
         return dni;
     }
